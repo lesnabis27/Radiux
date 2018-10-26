@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2283A1FD218377A500869693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A1FC218377A500869693 /* AppDelegate.swift */; };
+		2283A1FF218377A500869693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A1FE218377A500869693 /* ViewController.swift */; };
+		2283A202218377A500869693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2283A200218377A500869693 /* Main.storyboard */; };
+		2283A204218377A800869693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2283A203218377A800869693 /* Assets.xcassets */; };
+		2283A207218377A800869693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2283A205218377A800869693 /* LaunchScreen.storyboard */; };
+		2283A212218377A800869693 /* RadiuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A211218377A800869693 /* RadiuxTests.swift */; };
+		2283A217218377A800869693 /* Radiux WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2283A216218377A800869693 /* Radiux WatchKit App.app */; };
+		2283A21D218377A800869693 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2283A21B218377A800869693 /* Interface.storyboard */; };
+		2283A21F218377A900869693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2283A21E218377A900869693 /* Assets.xcassets */; };
+		2283A226218377A900869693 /* Radiux WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2283A225218377A900869693 /* Radiux WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2283A22B218377A900869693 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A22A218377A900869693 /* InterfaceController.swift */; };
+		2283A22D218377A900869693 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A22C218377A900869693 /* ExtensionDelegate.swift */; };
+		2283A22F218377AA00869693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2283A22E218377AA00869693 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2283A20E218377A800869693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2283A1F1218377A500869693 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2283A1F8218377A500869693;
+			remoteInfo = Radiux;
+		};
+		2283A218218377A800869693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2283A1F1218377A500869693 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2283A215218377A800869693;
+			remoteInfo = "Radiux WatchKit App";
+		};
+		2283A227218377A900869693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2283A1F1218377A500869693 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2283A224218377A900869693;
+			remoteInfo = "Radiux WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2283A236218377AA00869693 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2283A226218377A900869693 /* Radiux WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2283A23A218377AA00869693 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2283A217218377A800869693 /* Radiux WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2283A1F9218377A500869693 /* Radiux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radiux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2283A1FC218377A500869693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2283A1FE218377A500869693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2283A201218377A500869693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2283A203218377A800869693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2283A206218377A800869693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2283A208218377A800869693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2283A20D218377A800869693 /* RadiuxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiuxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2283A211218377A800869693 /* RadiuxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiuxTests.swift; sourceTree = "<group>"; };
+		2283A213218377A800869693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2283A216218377A800869693 /* Radiux WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radiux WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2283A21C218377A800869693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2283A21E218377A900869693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2283A220218377A900869693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2283A225218377A900869693 /* Radiux WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Radiux WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2283A22A218377A900869693 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2283A22C218377A900869693 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2283A22E218377AA00869693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2283A230218377AA00869693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2283A1F6218377A500869693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2283A20A218377A800869693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2283A222218377A900869693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2283A1F0218377A500869693 = {
+			isa = PBXGroup;
+			children = (
+				2283A1FB218377A500869693 /* Radiux */,
+				2283A210218377A800869693 /* RadiuxTests */,
+				2283A21A218377A800869693 /* Radiux WatchKit App */,
+				2283A229218377A900869693 /* Radiux WatchKit Extension */,
+				2283A1FA218377A500869693 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2283A1FA218377A500869693 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2283A1F9218377A500869693 /* Radiux.app */,
+				2283A20D218377A800869693 /* RadiuxTests.xctest */,
+				2283A216218377A800869693 /* Radiux WatchKit App.app */,
+				2283A225218377A900869693 /* Radiux WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2283A1FB218377A500869693 /* Radiux */ = {
+			isa = PBXGroup;
+			children = (
+				2283A1FC218377A500869693 /* AppDelegate.swift */,
+				2283A1FE218377A500869693 /* ViewController.swift */,
+				2283A200218377A500869693 /* Main.storyboard */,
+				2283A203218377A800869693 /* Assets.xcassets */,
+				2283A205218377A800869693 /* LaunchScreen.storyboard */,
+				2283A208218377A800869693 /* Info.plist */,
+			);
+			path = Radiux;
+			sourceTree = "<group>";
+		};
+		2283A210218377A800869693 /* RadiuxTests */ = {
+			isa = PBXGroup;
+			children = (
+				2283A211218377A800869693 /* RadiuxTests.swift */,
+				2283A213218377A800869693 /* Info.plist */,
+			);
+			path = RadiuxTests;
+			sourceTree = "<group>";
+		};
+		2283A21A218377A800869693 /* Radiux WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2283A21B218377A800869693 /* Interface.storyboard */,
+				2283A21E218377A900869693 /* Assets.xcassets */,
+				2283A220218377A900869693 /* Info.plist */,
+			);
+			path = "Radiux WatchKit App";
+			sourceTree = "<group>";
+		};
+		2283A229218377A900869693 /* Radiux WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2283A22A218377A900869693 /* InterfaceController.swift */,
+				2283A22C218377A900869693 /* ExtensionDelegate.swift */,
+				2283A22E218377AA00869693 /* Assets.xcassets */,
+				2283A230218377AA00869693 /* Info.plist */,
+			);
+			path = "Radiux WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2283A1F8218377A500869693 /* Radiux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2283A23B218377AA00869693 /* Build configuration list for PBXNativeTarget "Radiux" */;
+			buildPhases = (
+				2283A1F5218377A500869693 /* Sources */,
+				2283A1F6218377A500869693 /* Frameworks */,
+				2283A1F7218377A500869693 /* Resources */,
+				2283A23A218377AA00869693 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2283A219218377A800869693 /* PBXTargetDependency */,
+			);
+			name = Radiux;
+			productName = Radiux;
+			productReference = 2283A1F9218377A500869693 /* Radiux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2283A20C218377A800869693 /* RadiuxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2283A23E218377AA00869693 /* Build configuration list for PBXNativeTarget "RadiuxTests" */;
+			buildPhases = (
+				2283A209218377A800869693 /* Sources */,
+				2283A20A218377A800869693 /* Frameworks */,
+				2283A20B218377A800869693 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2283A20F218377A800869693 /* PBXTargetDependency */,
+			);
+			name = RadiuxTests;
+			productName = RadiuxTests;
+			productReference = 2283A20D218377A800869693 /* RadiuxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2283A215218377A800869693 /* Radiux WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2283A237218377AA00869693 /* Build configuration list for PBXNativeTarget "Radiux WatchKit App" */;
+			buildPhases = (
+				2283A214218377A800869693 /* Resources */,
+				2283A236218377AA00869693 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2283A228218377A900869693 /* PBXTargetDependency */,
+			);
+			name = "Radiux WatchKit App";
+			productName = "Radiux WatchKit App";
+			productReference = 2283A216218377A800869693 /* Radiux WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2283A224218377A900869693 /* Radiux WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2283A233218377AA00869693 /* Build configuration list for PBXNativeTarget "Radiux WatchKit Extension" */;
+			buildPhases = (
+				2283A221218377A900869693 /* Sources */,
+				2283A222218377A900869693 /* Frameworks */,
+				2283A223218377A900869693 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Radiux WatchKit Extension";
+			productName = "Radiux WatchKit Extension";
+			productReference = 2283A225218377A900869693 /* Radiux WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2283A1F1218377A500869693 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Sam Richardson";
+				TargetAttributes = {
+					2283A1F8218377A500869693 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2283A20C218377A800869693 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2283A1F8218377A500869693;
+					};
+					2283A215218377A800869693 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2283A224218377A900869693 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2283A1F4218377A500869693 /* Build configuration list for PBXProject "Radiux" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2283A1F0218377A500869693;
+			productRefGroup = 2283A1FA218377A500869693 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2283A1F8218377A500869693 /* Radiux */,
+				2283A20C218377A800869693 /* RadiuxTests */,
+				2283A215218377A800869693 /* Radiux WatchKit App */,
+				2283A224218377A900869693 /* Radiux WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2283A1F7218377A500869693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2283A207218377A800869693 /* LaunchScreen.storyboard in Resources */,
+				2283A204218377A800869693 /* Assets.xcassets in Resources */,
+				2283A202218377A500869693 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2283A20B218377A800869693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2283A214218377A800869693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2283A21F218377A900869693 /* Assets.xcassets in Resources */,
+				2283A21D218377A800869693 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2283A223218377A900869693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2283A22F218377AA00869693 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2283A1F5218377A500869693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2283A1FF218377A500869693 /* ViewController.swift in Sources */,
+				2283A1FD218377A500869693 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2283A209218377A800869693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2283A212218377A800869693 /* RadiuxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2283A221218377A900869693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2283A22D218377A900869693 /* ExtensionDelegate.swift in Sources */,
+				2283A22B218377A900869693 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2283A20F218377A800869693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2283A1F8218377A500869693 /* Radiux */;
+			targetProxy = 2283A20E218377A800869693 /* PBXContainerItemProxy */;
+		};
+		2283A219218377A800869693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2283A215218377A800869693 /* Radiux WatchKit App */;
+			targetProxy = 2283A218218377A800869693 /* PBXContainerItemProxy */;
+		};
+		2283A228218377A900869693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2283A224218377A900869693 /* Radiux WatchKit Extension */;
+			targetProxy = 2283A227218377A900869693 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2283A200218377A500869693 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2283A201218377A500869693 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2283A205218377A800869693 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2283A206218377A800869693 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2283A21B218377A800869693 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2283A21C218377A800869693 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2283A231218377AA00869693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2283A232218377AA00869693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2283A234218377AA00869693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LWHS65CZ4J;
+				INFOPLIST_FILE = "Radiux WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smrchrdsn.Radiux.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		2283A235218377AA00869693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LWHS65CZ4J;
+				INFOPLIST_FILE = "Radiux WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smrchrdsn.Radiux.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		2283A238218377AA00869693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LWHS65CZ4J;
+				IBSC_MODULE = Radiux_WatchKit_Extension;
+				INFOPLIST_FILE = "Radiux WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smrchrdsn.Radiux.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		2283A239218377AA00869693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LWHS65CZ4J;
+				IBSC_MODULE = Radiux_WatchKit_Extension;
+				INFOPLIST_FILE = "Radiux WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smrchrdsn.Radiux.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		2283A23C218377AA00869693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LWHS65CZ4J;
+				INFOPLIST_FILE = Radiux/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smrchrdsn.Radiux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2283A23D218377AA00869693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LWHS65CZ4J;
+				INFOPLIST_FILE = Radiux/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smrchrdsn.Radiux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2283A23F218377AA00869693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LWHS65CZ4J;
+				INFOPLIST_FILE = RadiuxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smrchrdsn.RadiuxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Radiux.app/Radiux";
+			};
+			name = Debug;
+		};
+		2283A240218377AA00869693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LWHS65CZ4J;
+				INFOPLIST_FILE = RadiuxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smrchrdsn.RadiuxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Radiux.app/Radiux";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2283A1F4218377A500869693 /* Build configuration list for PBXProject "Radiux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2283A231218377AA00869693 /* Debug */,
+				2283A232218377AA00869693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2283A233218377AA00869693 /* Build configuration list for PBXNativeTarget "Radiux WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2283A234218377AA00869693 /* Debug */,
+				2283A235218377AA00869693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2283A237218377AA00869693 /* Build configuration list for PBXNativeTarget "Radiux WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2283A238218377AA00869693 /* Debug */,
+				2283A239218377AA00869693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2283A23B218377AA00869693 /* Build configuration list for PBXNativeTarget "Radiux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2283A23C218377AA00869693 /* Debug */,
+				2283A23D218377AA00869693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2283A23E218377AA00869693 /* Build configuration list for PBXNativeTarget "RadiuxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2283A23F218377AA00869693 /* Debug */,
+				2283A240218377AA00869693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2283A1F1218377A500869693 /* Project object */;
+}
