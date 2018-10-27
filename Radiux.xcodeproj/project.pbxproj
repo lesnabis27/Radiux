@@ -20,6 +20,14 @@
 		2283A22B218377A900869693 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A22A218377A900869693 /* InterfaceController.swift */; };
 		2283A22D218377A900869693 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A22C218377A900869693 /* ExtensionDelegate.swift */; };
 		2283A22F218377AA00869693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2283A22E218377AA00869693 /* Assets.xcassets */; };
+		2283A242218379FD00869693 /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A241218379FD00869693 /* PlayerNode.swift */; };
+		2283A24421837A2E00869693 /* ProjectileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A24321837A2E00869693 /* ProjectileNode.swift */; };
+		2283A24621837A4500869693 /* ObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A24521837A4500869693 /* ObstacleNode.swift */; };
+		2283A24821837AA400869693 /* PickupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A24721837AA400869693 /* PickupNode.swift */; };
+		2283A24A21838B5600869693 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A24921838B5600869693 /* Game.swift */; };
+		2283A24C21838BD600869693 /* GameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A24B21838BD600869693 /* GameInterfaceController.swift */; };
+		2283A24E21838DE400869693 /* ScoreNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A24D21838DE400869693 /* ScoreNode.swift */; };
+		2283A2502183B65F00869693 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2283A24F2183B65F00869693 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,14 @@
 		2283A22C218377A900869693 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		2283A22E218377AA00869693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2283A230218377AA00869693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2283A241218379FD00869693 /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+		2283A24321837A2E00869693 /* ProjectileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectileNode.swift; sourceTree = "<group>"; };
+		2283A24521837A4500869693 /* ObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleNode.swift; sourceTree = "<group>"; };
+		2283A24721837AA400869693 /* PickupNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupNode.swift; sourceTree = "<group>"; };
+		2283A24921838B5600869693 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		2283A24B21838BD600869693 /* GameInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
+		2283A24D21838DE400869693 /* ScoreNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreNode.swift; sourceTree = "<group>"; };
+		2283A24F2183B65F00869693 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,9 +192,17 @@
 			isa = PBXGroup;
 			children = (
 				2283A22A218377A900869693 /* InterfaceController.swift */,
+				2283A24B21838BD600869693 /* GameInterfaceController.swift */,
+				2283A24921838B5600869693 /* Game.swift */,
+				2283A241218379FD00869693 /* PlayerNode.swift */,
+				2283A24321837A2E00869693 /* ProjectileNode.swift */,
+				2283A24521837A4500869693 /* ObstacleNode.swift */,
+				2283A24721837AA400869693 /* PickupNode.swift */,
+				2283A24D21838DE400869693 /* ScoreNode.swift */,
 				2283A22C218377A900869693 /* ExtensionDelegate.swift */,
 				2283A22E218377AA00869693 /* Assets.xcassets */,
 				2283A230218377AA00869693 /* Info.plist */,
+				2283A24F2183B65F00869693 /* Extensions.swift */,
 			);
 			path = "Radiux WatchKit Extension";
 			sourceTree = "<group>";
@@ -363,7 +387,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2283A22D218377A900869693 /* ExtensionDelegate.swift in Sources */,
+				2283A24621837A4500869693 /* ObstacleNode.swift in Sources */,
+				2283A24E21838DE400869693 /* ScoreNode.swift in Sources */,
+				2283A24A21838B5600869693 /* Game.swift in Sources */,
 				2283A22B218377A900869693 /* InterfaceController.swift in Sources */,
+				2283A2502183B65F00869693 /* Extensions.swift in Sources */,
+				2283A24821837AA400869693 /* PickupNode.swift in Sources */,
+				2283A24421837A2E00869693 /* ProjectileNode.swift in Sources */,
+				2283A242218379FD00869693 /* PlayerNode.swift in Sources */,
+				2283A24C21838BD600869693 /* GameInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

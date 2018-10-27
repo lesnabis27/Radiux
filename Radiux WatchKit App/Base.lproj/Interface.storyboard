@@ -12,8 +12,40 @@
         <!--startScreen-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="startScreen" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Radiux_WatchKit_App" customModuleProvider="target"/>
+                <controller identifier="startScreen" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Radiux_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Radiux" id="76c-GH-qTK">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="3nA-s3-nph">
+                            <items>
+                                <button width="1" alignment="left" title="Start a Game" id="FQZ-K9-Bib">
+                                    <connections>
+                                        <segue destination="FVd-ca-kpK" kind="push" id="50y-NW-9g2"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" text="High Score" id="eyb-IW-ukX">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
+        </scene>
+        <!--gameScreen-->
+        <scene sceneID="HBE-WB-h5a">
+            <objects>
+                <controller identifier="gameScreen" fullBounds="YES" fullScreen="YES" id="FVd-ca-kpK" customClass="GameInterfaceController" customModule="Radiux_WatchKit_Extension">
+                    <items>
+                        <spriteKitScene alignment="left" id="nwC-G9-yGr"/>
+                    </items>
+                    <connections>
+                        <outlet property="sceneInterface" destination="nwC-G9-yGr" id="grn-hT-kxc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="317" y="31"/>
         </scene>
     </scenes>
 </document>
