@@ -22,7 +22,10 @@ class ProjectileNode: SKSpriteNode {
     
     func setup() {
         name = "projectile"
-        physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 2.0, height: 10.0))
+        physicsBody = SKPhysicsBody(rectangleOf: size)
+        physicsBody?.categoryBitMask = PhysicsCategory.projectile
+        physicsBody?.contactTestBitMask = PhysicsCategory.obstacle | PhysicsCategory.pickup
+        physicsBody?.collisionBitMask = PhysicsCategory.none
         physicsBody?.affectedByGravity = false
         physicsBody?.allowsRotation = false
     }

@@ -10,8 +10,10 @@ import SpriteKit
 
 class PlayerNode: SKSpriteNode {
 
+    let image = SKTexture(imageNamed: "player")
+    
     init() {
-        super.init(texture: nil, color: .white, size: CGSize(width: 10.0, height: 20.0))
+        super.init(texture: image, color: .clear, size: image.size())
         setup()
     }
     
@@ -22,15 +24,18 @@ class PlayerNode: SKSpriteNode {
     
     func setup() {
         name = "player"
-        physicsBody = SKPhysicsBody(rectangleOf: size)
+        physicsBody = SKPhysicsBody(circleOfRadius: size.width * 0.5)
+        physicsBody?.categoryBitMask = PhysicsCategory.player
+        physicsBody?.contactTestBitMask = PhysicsCategory.obstacle | PhysicsCategory.pickup
+        physicsBody?.collisionBitMask = PhysicsCategory.none
         physicsBody?.pinned = true
     }
     
     func shoot() {
         if parent != nil {
             let projectile = ProjectileNode()
-            let vector = CGVector(dr: 300, dtheta: zRotation - CGFloat.pi * 0.5)
-            let action = SKAction.move(by: vector, duration: 1.0)
+            let vector = CGVector(dr: 300, dtheta: zRotation + CGFloat.pi * 0.5)
+            let action = SKAction.move(by: vector, duration: 0.5)
             let remove = SKAction.removeFromParent()
             projectile.position = position
             projectile.zRotation = zRotation

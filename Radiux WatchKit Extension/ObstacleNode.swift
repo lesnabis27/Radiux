@@ -10,8 +10,10 @@ import SpriteKit
 
 class ObstacleNode: SKSpriteNode {
 
+    let image = SKTexture(imageNamed: "obstacle")
+    
     init() {
-        super.init(texture: nil, color: .white, size: CGSize(width: 10.0, height: 10.0))
+        super.init(texture: image, color: .clear, size: image.size())
         setup()
     }
     
@@ -22,7 +24,10 @@ class ObstacleNode: SKSpriteNode {
     
     func setup() {
         name = "obstacle"
-        physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 10.0, height: 10.0))
+        physicsBody = SKPhysicsBody(circleOfRadius: size.width * 0.5)
+        physicsBody?.categoryBitMask = PhysicsCategory.obstacle
+        physicsBody?.contactTestBitMask = PhysicsCategory.player | PhysicsCategory.projectile
+        physicsBody?.collisionBitMask = PhysicsCategory.none
         physicsBody?.affectedByGravity = false
         physicsBody?.allowsRotation = false
     }
