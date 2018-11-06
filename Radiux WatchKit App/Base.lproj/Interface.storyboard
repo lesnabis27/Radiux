@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16.1"/>
     </dependencies>
@@ -17,7 +16,7 @@
                         <label alignment="left" text="Radiux" id="76c-GH-qTK">
                             <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
                         </label>
-                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="3nA-s3-nph">
+                        <group width="1" alignment="left" layout="vertical" id="3nA-s3-nph">
                             <items>
                                 <button width="1" alignment="left" title="Start a Game" id="FQZ-K9-Bib">
                                     <connections>
@@ -36,7 +35,7 @@
         <!--gameScreen-->
         <scene sceneID="HBE-WB-h5a">
             <objects>
-                <controller identifier="gameScreen" fullBounds="YES" fullScreen="YES" id="FVd-ca-kpK" customClass="GameInterfaceController" customModule="Radiux_WatchKit_Extension">
+                <controller identifier="gameScreen" fullScreen="YES" id="FVd-ca-kpK" customClass="GameInterfaceController" customModule="Radiux_WatchKit_Extension">
                     <items>
                         <spriteKitScene alignment="left" id="nwC-G9-yGr"/>
                     </items>
@@ -45,7 +44,25 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="317" y="31"/>
+            <point key="canvasLocation" x="365" y="292"/>
+        </scene>
+        <!--Play Again-->
+        <scene sceneID="t6V-Q4-0sh">
+            <objects>
+                <controller identifier="gameOver" title="Play Again" fullBounds="YES" id="AhZ-A0-lR8" customClass="GameOverInterfaceController" customModule="Radiux_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Score" id="I7z-yy-rYm">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="High Score" id="hat-ba-dlT"/>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="I7z-yy-rYm" id="fq5-gw-dvu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="667" y="292"/>
         </scene>
     </scenes>
 </document>

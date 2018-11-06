@@ -21,6 +21,7 @@ class ScoreNode: SKLabelNode {
     }
     
     func setup() {
+        name = "score"
         text = "0"
         fontName = "SFCompactText-Regular"
         fontSize = 24
